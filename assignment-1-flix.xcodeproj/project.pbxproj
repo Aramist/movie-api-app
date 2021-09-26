@@ -9,21 +9,24 @@
 /* Begin PBXBuildFile section */
 		800AE8122700E78200DB0446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800AE8112700E78200DB0446 /* AppDelegate.swift */; };
 		800AE8142700E78200DB0446 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800AE8132700E78200DB0446 /* SceneDelegate.swift */; };
-		800AE8162700E78200DB0446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800AE8152700E78200DB0446 /* ViewController.swift */; };
+		800AE8162700E78200DB0446 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800AE8152700E78200DB0446 /* MoviesViewController.swift */; };
 		800AE8192700E78200DB0446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800AE8172700E78200DB0446 /* Main.storyboard */; };
 		800AE81B2700E78700DB0446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 800AE81A2700E78700DB0446 /* Assets.xcassets */; };
 		800AE81E2700E78700DB0446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800AE81C2700E78700DB0446 /* LaunchScreen.storyboard */; };
+		800AE8262700F29C00DB0446 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800AE8252700F29C00DB0446 /* MovieCell.swift */; };
+		800AE8292700F85800DB0446 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 800AE8282700F85800DB0446 /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		800AE80E2700E78200DB0446 /* assignment-1-flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "assignment-1-flix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		800AE8112700E78200DB0446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		800AE8132700E78200DB0446 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		800AE8152700E78200DB0446 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		800AE8152700E78200DB0446 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		800AE8182700E78200DB0446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		800AE81A2700E78700DB0446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		800AE81D2700E78700DB0446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		800AE81F2700E78700DB0446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		800AE8252700F29C00DB0446 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				800AE8292700F85800DB0446 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +62,12 @@
 			children = (
 				800AE8112700E78200DB0446 /* AppDelegate.swift */,
 				800AE8132700E78200DB0446 /* SceneDelegate.swift */,
-				800AE8152700E78200DB0446 /* ViewController.swift */,
+				800AE8152700E78200DB0446 /* MoviesViewController.swift */,
 				800AE8172700E78200DB0446 /* Main.storyboard */,
 				800AE81A2700E78700DB0446 /* Assets.xcassets */,
 				800AE81C2700E78700DB0446 /* LaunchScreen.storyboard */,
 				800AE81F2700E78700DB0446 /* Info.plist */,
+				800AE8252700F29C00DB0446 /* MovieCell.swift */,
 			);
 			path = "assignment-1-flix";
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "assignment-1-flix";
+			packageProductDependencies = (
+				800AE8282700F85800DB0446 /* AlamofireImage */,
+			);
 			productName = "assignment-1-flix";
 			productReference = 800AE80E2700E78200DB0446 /* assignment-1-flix.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 800AE8052700E78200DB0446;
+			packageReferences = (
+				800AE8272700F85800DB0446 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 800AE80F2700E78200DB0446 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				800AE8162700E78200DB0446 /* ViewController.swift in Sources */,
+				800AE8162700E78200DB0446 /* MoviesViewController.swift in Sources */,
+				800AE8262700F29C00DB0446 /* MovieCell.swift in Sources */,
 				800AE8122700E78200DB0446 /* AppDelegate.swift in Sources */,
 				800AE8142700E78200DB0446 /* SceneDelegate.swift in Sources */,
 			);
@@ -285,12 +297,14 @@
 		800AE8232700E78700DB0446 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = NotAppicon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "assignment-1-flix/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Flix;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -312,12 +326,14 @@
 		800AE8242700E78700DB0446 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = NotAppicon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "assignment-1-flix/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Flix;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -358,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		800AE8272700F85800DB0446 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		800AE8282700F85800DB0446 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 800AE8272700F85800DB0446 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 800AE8062700E78200DB0446 /* Project object */;
 }
