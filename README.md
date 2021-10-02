@@ -16,7 +16,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthrough GIF
 
-<img src="https://github.com/Aramist/movie-api-app/blob/master/assignment-2-demonstration.gif" width=250><br>
+<img src="https://github.com/Aramist/movie-api-app/blob/assignment-2/assignment-2-demonstration.gif" width=250><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
